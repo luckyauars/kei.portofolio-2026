@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Home - My Portfolio    </title>
+        Home - My Portfolio </title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             window.location.href = "mobile.html";
         }
     </script>
@@ -30,10 +30,8 @@
             <ul class="nav-links">
                 <li><a href="./about.html" class="">About Me</a>
                 </li>
-                <li><a href="./education.html"
-                        class="">Education</a></li>
-                <li><a href="./experience.html"
-                        class="">Experience</a></li>
+                <li><a href="./education.html" class="">Education</a></li>
+                <li><a href="./experience.html" class="">Experience</a></li>
                 <li><a href="./work.html" class="">My Work</a>
                 </li>
             </ul>
@@ -44,12 +42,12 @@
     <main class="content-wrapper">
         <div class="container">
             <section class="home-hero">
-    <div class="hero-content">
-        <h1 class="hero-title">PORTOFOLIO</h1>
-        <p class="hero-subtitle">Dokumentasi Project Programmer Web Developer & Aplikasi</p>
-        <a href="./work.html" class="btn hero-btn">View Portofolio</a>
-    </div>
-</section>
+                <div class="hero-content">
+                    <h1 class="hero-title">PORTOFOLIO</h1>
+                    <p class="hero-subtitle">Dokumentasi Project Programmer Web Developer & Aplikasi</p>
+                    <a href="./work.html" class="btn hero-btn">View Portofolio</a>
+                </div>
+            </section>
         </div>
     </main>
 
