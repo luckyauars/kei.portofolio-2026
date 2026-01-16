@@ -1,0 +1,330 @@
+:root {
+    --primary-color: #1a1816;
+    --secondary-color: #262422;
+    --accent-color: #d6d6d6;
+    --text-color: #f0f0f0;
+    --highlight: #b0a8a0;
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background: transparent;
+    padding: 2rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: none;
+    pointer-events: none;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Hide Logo if not needed or make subtle */
+.logo {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+    pointer-events: auto;
+}
+
+.nav-links a {
+    font-weight: 400;
+    font-size: 1rem;
+    opacity: 0.9;
+    color: #dedede;
+    text-transform: capitalize;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    opacity: 1;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* Cloud Animation */
+.cloud-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2b2624 0%, #171514 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.cloud {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.6;
+    transition: transform 0.1s ease-out;
+}
+
+.cloud-1 {
+    width: 600px;
+    height: 600px;
+    top: -10%;
+    left: -10%;
+}
+
+.cloud-2 {
+    width: 800px;
+    height: 800px;
+    bottom: -10%;
+    right: -20%;
+}
+
+.cloud-3 {
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    left: 30%;
+    opacity: 0.5;
+}
+
+/* Content */
+.content-wrapper {
+    padding-top: 0;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.home-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #e0e1dd;
+    margin: 1rem 0 2.5rem 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--highlight);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+h2 a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--highlight);
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #5c728f;
+}
+
+/* Hero Button - Moved AFTER generic .btn to ensure override */
+.hero-btn {
+    padding: 0.7rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero-btn:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.timeline-item {
+    border-left: 2px solid var(--highlight);
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Reduce Hero Text Sizes */
+    .hero-title {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .hero-btn {
+        padding: 0.6rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust page headings */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Single Page View Spacing */
+    .mobile-container section {
+        padding: 1.5rem 0 !important;
+    }
+
+    .home-hero {
+        min-height: 80vh;
+    }
+}

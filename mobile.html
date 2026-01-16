@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Portfolio (Mobile) </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="cloud-bg">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="./about.html" class="">About Me</a>
+                </li>
+                <li><a href="./education.html" class="">Education</a></li>
+                <li><a href="./experience.html" class="">Experience</a></li>
+                <li><a href="./work.html" class="">My Work</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <div class="container">
+            <div id="mobile-nav" class="mobile-nav">
+                <a href="#about" class="mobile-link" data-target="about">About Me</a>
+                <a href="#education" class="mobile-link" data-target="education">Education</a>
+                <a href="#experience" class="mobile-link" data-target="experience">Experience</a>
+                <a href="#work" class="mobile-link" data-target="work">My Work</a>
+            </div>
+
+            <div class="mobile-container" style="padding-top: 50px;">
+
+                <section id="home" class="mobile-section"
+                    style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+                    <section class="home-hero">
+                        <div class="hero-content">
+                            <h1 class="hero-title">PORTOFOLIO</h1>
+                            <p class="hero-subtitle">Dokumentasi Project Programmer Web Developer & Aplikasi</p>
+                            <a href="./work.html" class="btn hero-btn">View Portofolio</a>
+                        </div>
+                    </section>
+                </section>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+
+                <section id="about" class="mobile-section" style="padding: 2rem 0;">
+                    <h2><a href="./index.html" style="text-decoration: none; color: inherit;">About Me</a></h2>
+                    <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 8px;">
+
+                        <!-- Profile & Bio Wrapper -->
+                        <div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+                            <!-- Profile Photo -->
+                            <div
+                                style="flex-shrink: 0; text-align: center; width: 100%; max-width: 180px; margin: 0 auto;">
+                                <img src="./assets/profile-3.png" alt="Profile Photo"
+                                    style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--highlight); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                            </div>
+
+                            <!-- Text Content -->
+                            <div style="flex: 1; min-width: 300px;">
+                                <p style="margin-bottom: 1rem; font-size: 1.1rem; line-height: 1.8;">
+                                    Perkenalkan saya <strong>Lucky Aulia Arisdi</strong>.
+                                </p>
+                                <p style="margin-bottom: 1rem; line-height: 1.8;">
+                                    Saya adalah lulusan <strong>SMK Negeri 5 Malang</strong> tahun 2024 dari jurusan
+                                    Rekayasa Perangkat
+                                    Lunak (PPLG).
+                                    Sejak masa sekolah, saya sudah sangat tertarik dengan dunianya pemrograman. Saat
+                                    ini, fokus utama saya
+                                    adalah
+                                    mengembangkan keahlian di bidang <strong>Website Development</strong>, <strong>Game
+                                        Development</strong>, serta
+                                    <strong>System Maintenance</strong>.
+                                </p>
+                                <p style="margin-bottom: 1rem; line-height: 1.8;">
+                                    Saya senang mempelajari teknologi baru dan selalu berusaha memberikan hasil terbaik
+                                    di setiap proyek
+                                    yang saya kerjakan,
+                                    baik itu membangun sistem yang efisien maupun menciptakan pengalaman digital yang
+                                    menarik.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Skills Section (Full Width) -->
+                        <h3
+                            style="margin-top: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem;">
+                            Skills & Focus
+                        </h3>
+                        <ul style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                            <li
+                                style="background: var(--secondary-color); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--highlight);">
+                                Web Development (PHP/Laravel/CI)
+                            </li>
+                            <li
+                                style="background: var(--secondary-color); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--highlight);">
+                                Game Development (Unity/C#)
+                            </li>
+                            <li
+                                style="background: var(--secondary-color); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--highlight);">
+                                System Maintenance
+                            </li>
+                            <li
+                                style="background: var(--secondary-color); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--highlight);">
+                                Front-End (HTML/CSS/JS/React)
+                            </li>
+                            <li
+                                style="background: var(--secondary-color); padding: 5px 15px; border-radius: 20px; border: 1px solid var(--highlight);">
+                                Database Management
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+
+                <section id="education" class="mobile-section" style="padding: 2rem 0;">
+                    <h2><a href="./index.html" style="text-decoration: none; color: inherit;">Education</a></h2>
+
+                    <div class="timeline">
+                        <!-- Item 1 (Oldest): SMP -->
+                        <div class="timeline-item">
+                            <h3>SMP Negeri 3 Malang</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">Lulus | 2018 - 2021</h4>
+                            <p>Menyelesaikan pendidikan sekolah menengah pertama.</p>
+                        </div>
+
+                        <!-- Item 2 (Newest): SMK -->
+                        <div class="timeline-item">
+                            <h3>SMK Negeri 5 Malang</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">Rekayasa Perangkat Lunak (PPLG) | 2021 - 2024
+                            </h4>
+                            <p>Fokus pada pengembangan perangkat lunak dan pemrograman (Software Engineering).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+
+                <section id="experience" class="mobile-section" style="padding: 2rem 0;">
+                    <h2><a href="./index.html" style="text-decoration: none; color: inherit;">Work Experience</a></h2>
+
+                    <div class="timeline">
+                        <!-- Item 1 (Oldest): CV. Dako Indonesia -->
+                        <div class="timeline-item">
+                            <h3>Web & Game Developer (Internship)</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">CV. Dako Indonesia | 14 Juni - 27 Desember
+                                2023</h4>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #d6d6d6;">
+                                <li>Wordpress Maintenance.</li>
+                                <li>SEO Marketing Bloggers.</li>
+                                <li>Game Developer Unity C#.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Item 2: Hotel Dewarna Sutoyo -->
+                        <div class="timeline-item">
+                            <h3>IT Staff Hotel (Full Time)</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">Hotel Dewarna Sutoyo | 11 Juni - 20 Januari
+                                2024/2025</h4>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #d6d6d6;">
+                                <li>IT Support.</li>
+                                <li>Pengembangan Maintenance Server Hotel.</li>
+                                <li>Content Creator.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Item 3: PT. Assist Software Indonesia -->
+                        <div class="timeline-item">
+                            <h3>Web Programmer (Full Time)</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">PT. Assist Software Indonesia | 1 Februari -
+                                19 Juni 2025</h4>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #d6d6d6;">
+                                <li>Mengembangkan aplikasi perbankan BPR dan koperasi berbasis MVC dengan Laravel, serta
+                                    aplikasi berbasis PHP, Ajax, dan JavaScript.</li>
+                                <li>Membangun dan menambahkan fitur-fitur sesuai regulasi OJK atau permintaan manajemen
+                                    untuk sistem BPR/Koperasi.</li>
+                                <li>Melakukan maintenance dan DevOps, termasuk problem solving untuk error, bug fixing,
+                                    dan penyempurnaan fitur di aplikasi perbankan.</li>
+                                <li>Berkontribusi pada pengembangan modul baru, laporan keuangan, dan integrasi sistem
+                                    internal perbankan.</li>
+                                <li>Bekerja sama dengan tim untuk memastikan aplikasi berjalan lancar dan sesuai standar
+                                    keamanan perbankan.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Item 4 (Newest): PT. Twenty Four Hours -->
+                        <div class="timeline-item">
+                            <h3>Web Programmer (Full Time)</h3>
+                            <h4 style="color: #b0c4de; font-weight: 400;">PT. Twenty Four Hours | 1 Juli - 10 November
+                                2025</h4>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.2rem; color: #d6d6d6;">
+                                <li>Pengembangan Website Company Profile Menggunakan Sistem Wordpress, dan HTML/CSS/JS.
+                                </li>
+                                <li>Maintenance setiap hari dari hasil website sesuai yang disepakati untuk penambahan
+                                    atau pun pengurangan pada fitur atau tampilan Website.</li>
+                                <li>Bekerjasama dengan Tim Desain dan Konten agar hasil sesuai dengan branding dan
+                                    tujuan Company Profile/Bisnis Perusahaan.</li>
+                                <li>Pengoptimalan/Maintenance rutin dari sisi Front-end.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+
+                <section id="work" class="mobile-section" style="padding: 2rem 0; padding-bottom: 5rem;">
+                    <h2><a href="./index.html" style="text-decoration: none; color: inherit;">My Work</a></h2>
+                    <div class="card-grid">
+
+
+                        <div class="card">
+                            <h3>Fitness Pluss Indonesia</h3>
+                            <div
+                                style="height: 200px; overflow: hidden; border-radius: 4px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                                <img src="./assets/My Work/fp-indonesia.png" alt="Fitness Pluss Indonesia"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <a href="https://fitnessplusindonesia.co.id" target="_blank"
+                                style="color: var(--highlight); display: inline-block; margin-bottom: 1rem;">https://fitnessplusindonesia.co.id</a>
+                            <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                Fitness Pluss Indonesia Membuat Website Menggunakan CMS Wordpress, di dalam website ini
+                                ada 21 cabang Web
+                                Fitness Pluss berbeda konten membuat 21 website fitness pluss
+                                Indonesia beserta Cabang.
+                            </p>
+                        </div>
+
+
+                        <div class="card">
+                            <h3>a.papua.news</h3>
+                            <div
+                                style="height: 200px; overflow: hidden; border-radius: 4px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                                <img src="./assets/My Work/a.papua.news.png" alt="a.papua.news"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <a href="https://a.papua.news" target="_blank"
+                                style="color: var(--highlight); display: inline-block; margin-bottom: 1rem;">https://a.papua.news</a>
+                            <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                a.papua.news ini adalah website freelance yang saya pegang saat ini dan sudah selesai
+                                website ini saya
+                                menggunakan Laravel CI, Website ini adalah Web Berita dengan menggunakan fitur scraping
+                                atau bisa
+                                menggunakan Fitur AI Writter untuk memperbaiki kata kata sesuai dengan SEO yang
+                                kompatible untuk google atau
+                                orang orang yang sering baca hari ini atau kemarin maupun bulan lalu.
+                            </p>
+                        </div>
+
+
+                        <div class="card">
+                            <h3>Literacy snakes and ladders</h3>
+                            <div
+                                style="height: 200px; overflow: hidden; border-radius: 4px; margin-bottom: 1rem; margin-top: 0.5rem;">
+                                <img src="./assets/My Work/Game.png" alt="Literacy snakes and ladders"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <a href="./maintenance.html"
+                                style="color: var(--highlight); display: inline-block; margin-bottom: 1rem;">(View
+                                Details
+                                &rarr;)</a>
+                            <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                Sebuah game yang dibuat menggunakan Unity framework C#, Game ini dibuat untuk game
+                                pendidikan dengan suasana
+                                pustaka membaca, permainan ular tangga ini lebih memprioritaskan hasil point kemenangan
+                                dengan 0 - 100
+                                Petak/Kotak, bisa bermain dengan 2/3/4 Player.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <style>
+                @media (max-width: 768px) {
+                    .navbar {
+                        display: none;
+                    }
+
+                    .mobile-nav {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 15px;
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        width: auto;
+                        left: auto;
+                        background: transparent;
+                        padding: 0;
+                        z-index: 9999;
+                        backdrop-filter: none;
+                        border-bottom: none;
+                    }
+
+                    .mobile-link {
+                        color: rgba(255, 255, 255, 0.6);
+                        font-size: 0.9rem;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                    }
+
+                    .mobile-link.active {
+                        color: #fff;
+                        font-weight: bold;
+                        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                    }
+
+                    .content-wrapper {
+                        padding-top: 0 !important;
+                    }
+
+                    .home-hero {
+                        height: auto;
+                        min-height: 80vh;
+                        margin-top: 0;
+                    }
+
+                    section {
+                        scroll-margin-top: 60px;
+                    }
+                }
+
+                @media (min-width: 769px) {
+                    .mobile-nav {
+                        display: none;
+                    }
+                }
+            </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const sections = document.querySelectorAll('.mobile-section');
+                    const navLinks = document.querySelectorAll('.mobile-link');
+
+                    const observerOptions = {
+                        root: null,
+                        rootMargin: '-20% 0px -60% 0px',
+                        threshold: 0
+                    };
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                navLinks.forEach(link => link.classList.remove('active'));
+
+                                const id = entry.target.getAttribute('id');
+                                const activeLink = document.querySelector(`.mobile-link[href="#${id}"]`);
+                                if (activeLink) {
+                                    activeLink.classList.add('active');
+                                }
+                            }
+                        });
+                    }, observerOptions);
+
+                    sections.forEach(section => {
+                        observer.observe(section);
+                    });
+                });
+            </script>
+        </div>
+    </main>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

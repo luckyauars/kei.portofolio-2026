@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - 503</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2b2624 0%, #171514 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+            color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .code {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.3);
+            letter-spacing: 2px;
+        }
+
+        .content {
+            text-align: center;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #b0a8a0;
+            margin-bottom: 3rem;
+        }
+
+        .btn-back {
+            padding: 1rem 2.5rem;
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-back:hover {
+            background: #fff;
+            color: #1a1816;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="code">503</div>
+
+    <div class="content">
+        <h1>Under Maintenance</h1>
+        <p>We are currently improving our website. <br> Please come back later.</p>
+
+        <a href="./index.html" class="btn-back">Back to Home</a>
+    </div>
+
+</body>
+
+</html>
